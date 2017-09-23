@@ -10,11 +10,11 @@
                     </label>
                 {% endif %}
                 {% for error in field.errors %}
-                    <span class="help-block {{ form.error_css_class }}">{{ error }}</span>
+                    <span class="form-text {{ form.error_css_class }}">{{ error }}</span>
                 {% endfor %}
 
                 {% if field.help_text %}
-                    <p class="help-block">
+                    <p class="form-text">
                         {{ field.help_text|safe }}
                     </p>
                 {% endif %}
@@ -35,11 +35,11 @@
             {% endfor %}
 
             {% for error in field.errors %}
-                <span class="help-block {{ form.error_css_class }}">{{ error }}</span>
+                <span class="form-text {{ form.error_css_class }}">{{ error }}</span>
             {% endfor %}
 
             {% if field.help_text %}
-            <p class="help-block">
+            <p class="form-text">
                 {{ field.help_text|safe }}
             </p>
             {% endif %}
@@ -53,11 +53,11 @@
             {{ field }}
 
             {% for error in field.errors %}
-                <span class="help-block {{ form.error_css_class }}">{{ error }}</span>
+                <span class="form-text {{ form.error_css_class }}">{{ error }}</span>
                 {% endfor %}
 
             {% if field.help_text %}
-                <p class="help-block">
+                <p class="form-text">
                     {{ field.help_text|safe }}
                 </p>
             {% endif %}
